@@ -1,4 +1,4 @@
-package rabih.bankaccountservice.entities;
+package rabih.bankaccountservice.dtos;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,19 +9,14 @@ import rabih.bankaccountservice.enums.AccountType;
 
 import java.sql.Date;
 
-@Entity
 @Data
 @NoArgsConstructor @AllArgsConstructor @Builder
-public class BankAccount {
-    @Id
+public class BankAccountResponseDTO {
     private String id;
     private Date createdAt;
     private Double balance;
     private String currency;
-    @Enumerated(EnumType.STRING)
     private AccountType type;
-    @ManyToOne
-    private Customer customer;
-
+    private CustomerDTO customerdto;
 
 }

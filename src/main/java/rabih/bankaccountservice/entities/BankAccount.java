@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import rabih.bankaccountservice.enums.AccountType;
 
 import java.sql.Date;
 
