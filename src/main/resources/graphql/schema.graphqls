@@ -1,0 +1,17 @@
+
+type Query{
+    getAllBankAccount: [BankAccountResponseDTO]
+}
+
+type BankAccountResponseDTO {
+    id : String,
+    createdAt : Float,
+    balance: Float,
+    currency: Float,
+    type: String,
+    customerdto : CustomerDTO
+}
+
+type CustomerDTO{
+    name: String
+}
